@@ -61,7 +61,7 @@ export default async function Product({ params: { slug } }) {
                 type: 'p',
                 children: [
                   {
-                    text: 'The products displayed here are individually selected for this page. Admins can select any number of related products to display here and the layout will adjust accordingly. Alternatively, you could swap this out for the "Archive" block to automatically populate products by category complete with pagination. To manage related posts, ',
+                    text: 'Los productos que se muestran aquí se seleccionan individualmente para esta página. Los administradores pueden seleccionar cualquier número de productos relacionados para mostrar aquí y el diseño se ajustará en consecuencia. Alternativamente, puede cambiar esto por el bloque «Archivo» para rellenar automáticamente los productos por categoría con paginación. Para gestionar entradas relacionadas, ',
                   },
                   {
                     type: 'link',
