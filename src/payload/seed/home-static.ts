@@ -7,8 +7,8 @@ export const staticHome: Page = {
   createdAt: '',
   updatedAt: '',
   meta: {
-    title: 'Payload E-Commerce Template',
-    description: 'An open-source e-commerce store built with Payload and Next.js.',
+    title: 'Inicio',
+    description: 'El mejor proyecto de la clase de Sistemas de Internet - UNI 2024',
   },
   hero: {
     type: 'lowImpact',
@@ -16,7 +16,7 @@ export const staticHome: Page = {
       {
         children: [
           {
-            text: 'Payload E-commerce Template',
+            text: 'EL CRM DEL FUTURO',
           },
         ],
         type: 'h1',
@@ -24,14 +24,14 @@ export const staticHome: Page = {
       {
         children: [
           {
-            text: 'Welcome to your e-commerce store! ',
+            text: '¡Bienvenido a su tienda de comercio electrónico! ',
           },
           {
-            text: 'Your database is currently empty.',
+            text: 'Su base de datos está vacía.',
             bold: true,
           },
           {
-            text: ' To seed your database with a few products and pages, ',
+            text: ' Para sembrar su base de datos con algunos productos y páginas, ',
           },
           {
             type: 'link',
@@ -39,15 +39,15 @@ export const staticHome: Page = {
             url: '/admin',
             children: [
               {
-                text: 'log in to the admin dashboard',
+                text: 'acceda al panel de control del administrador',
               },
             ],
           },
           {
-            text: ' and click "seed your database". If you have already seeded your database, ',
+            text: ' y haga clic en "Sembrar su base de datos». Si ya ha sembrado su base de datos, ',
           },
           {
-            text: 'you may need to hard refresh this page to clear the cached request.',
+            text: 'es posible que tenga que actualizar esta página para borrar la solicitud almacenada en caché.',
             bold: true,
           },
         ],
@@ -55,7 +55,7 @@ export const staticHome: Page = {
       {
         children: [
           {
-            text: 'The code for this template is completely open-source and can be found ',
+            text: 'El código de esta plantilla es completamente de código abierto y puede encontrarse en ',
           },
           {
             type: 'link',
@@ -64,7 +64,7 @@ export const staticHome: Page = {
             newTab: true,
             children: [
               {
-                text: 'here',
+                text: 'aquí',
               },
             ],
           },
@@ -82,7 +82,7 @@ export const staticHome: Page = {
         {
           children: [
             {
-              text: 'Seed your database',
+              text: 'Siembra tu base de datos',
             },
           ],
           type: 'h4',
@@ -90,7 +90,7 @@ export const staticHome: Page = {
         {
           children: [
             {
-              text: 'Your database is currently empty. To seed your database, ',
+              text: 'Su base de datos está vacía. Para sembrar su base de datos, ',
             },
             {
               type: 'link',
@@ -98,12 +98,12 @@ export const staticHome: Page = {
               url: '/admin',
               children: [
                 {
-                  text: 'log in to the admin dashboard',
+                  text: 'acceda al panel de control del administrador',
                 },
               ],
             },
             {
-              text: ' and click "seed your database".',
+              text: ' y haga clic en "sembrar su base de datos".',
             },
           ],
         },
@@ -113,7 +113,7 @@ export const staticHome: Page = {
           link: {
             type: 'custom',
             url: '/admin',
-            label: 'Go to dashboard',
+            label: 'Ir al panel de control',
             appearance: 'primary',
             reference: null,
           },
