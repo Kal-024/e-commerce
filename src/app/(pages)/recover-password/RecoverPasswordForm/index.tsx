@@ -41,7 +41,7 @@ export const RecoverPasswordForm: React.FC = () => {
       setError('')
     } else {
       setError(
-        'There was a problem while attempting to send you a password reset email. Please try again.',
+        'Hubo un problema al intentar enviarte un correo para restablecer tu contraseña. Por favor, inténtalo de nuevo.',
       )
     }
   }, [])
@@ -50,38 +50,33 @@ export const RecoverPasswordForm: React.FC = () => {
     <Fragment>
       {!success && (
         <React.Fragment>
-          <h1>Recover Password</h1>
-          <div className={classes.formWrapper}>
-            <p>
-              {`Please enter your email below. You will receive an email message with instructions on
-              how to reset your password. To manage your all users, `}
-              <Link href="/admin/collections/users">login to the admin dashboard</Link>
-              {'.'}
-            </p>
-            <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
-              <Message error={error} className={classes.message} />
-              <Input
-                name="email"
-                label="Email Address"
-                required
-                register={register}
-                error={errors.email}
-                type="email"
-              />
-              <Button
-                type="submit"
-                appearance="primary"
-                label="Recover Password"
-                className={classes.submit}
-              />
-            </form>
-          </div>
+          <p>Introduce tu correo electrónico registrado. Te enviaremos un código para restablecer tu contraseña.</p>
+
+          <form onSubmit={handleSubmit(onSubmit)} className={classes.form}>
+            <Message error={error} className={classes.message} />
+            <Input
+              name="email"
+              label="Correo electrónico"
+              required
+              register={register}
+              error={errors.email}
+              type="email"
+            />
+            <Button
+              type="submit"
+              appearance="primary"
+              label="Recuperar contraseña"
+              className={classes.submit}
+            />
+          </form>
         </React.Fragment>
       )}
       {success && (
         <React.Fragment>
-          <h1>Request submitted</h1>
-          <p>Check your email for a link that will allow you to securely reset your password.</p>
+          <h1>Solicitud enviada</h1>
+          <p>
+            Revisa tu correo electrónico para un enlace que te permitirá restablecer tu contraseña de forma segura.
+          </p>
         </React.Fragment>
       )}
     </Fragment>

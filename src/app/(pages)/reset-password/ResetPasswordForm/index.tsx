@@ -52,7 +52,7 @@ export const ResetPasswordForm: React.FC = () => {
         // Redirect them to `/account` with success message in URL
         router.push('/account?success=Password reset successfully.')
       } else {
-        setError('There was a problem while resetting your password. Please try again later.')
+        setError('Hubo un problema al restablecer tu contraseña. Por favor, inténtalo de nuevo más tarde.')
       }
     },
     [router, login],
@@ -70,7 +70,7 @@ export const ResetPasswordForm: React.FC = () => {
       <Input
         name="password"
         type="password"
-        label="New Password"
+        label="Nueva contraseña"
         required
         register={register}
         error={errors.password}
@@ -79,7 +79,7 @@ export const ResetPasswordForm: React.FC = () => {
       <Button
         type="submit"
         appearance="primary"
-        label="Reset Password"
+        label="Restablecer contraseña"
         className={classes.submit}
       />
     </form>
